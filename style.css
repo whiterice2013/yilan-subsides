@@ -78,7 +78,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
   padding: 76px max(8%, calc((100% - 1180px) / 2));
   background:
     linear-gradient(90deg, rgb(248 246 239 / 98%) 0%, rgb(248 246 239 / 93%) 35%, rgb(248 246 239 / 45%) 68%, rgb(24 59 50 / 8%) 100%),
-    url("assets/family.png") center 48% / cover no-repeat,
+    url("https://yilan-parent-gift.brian09582583.chatgpt.site/assets/family.png") center 48% / cover no-repeat, url("assets/family.png") center 48% / cover no-repeat,
     #e9e8dc;
 }
 .hero::after {
@@ -248,7 +248,7 @@ h2 { margin: 12px 0 0; color: var(--forest); font-size: clamp(29px, 3vw, 38px); 
   .saved-nav { align-self: flex-start; margin-top: 10px; }
   .hero { min-height: 640px; align-items: flex-start; padding: 43px 7% 275px; background:
     linear-gradient(180deg, #f8f6ef 0%, rgb(248 246 239 / 98%) 45%, rgb(248 246 239 / 18%) 100%),
-    url("assets/family.png") 65% bottom / auto 360px no-repeat, #f8f6ef; }
+    url("https://yilan-parent-gift.brian09582583.chatgpt.site/assets/family.png") 65% bottom / auto 360px no-repeat, url("assets/family.png") 65% bottom / auto 360px no-repeat, #f8f6ef; }
   .hero-content { max-width: 100%; }
   .eyebrow { font-size: 9px; letter-spacing: 2px; gap: 8px; }
   .eyebrow-line { width: 20px; }
