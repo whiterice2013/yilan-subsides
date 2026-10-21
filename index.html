@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="好孕來宜蘭，新手爸媽補助福利入口。從孕期、生育到育兒與幼兒園，查詢補助與官方申辦資訊。">
+  <meta name="theme-color" content="#183b32">
+  <title>新手爸媽大禮包｜好孕來宜蘭</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700&family=Noto+Serif+TC:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要內容</a>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="好孕來宜蘭首頁">
+      <span class="brand-mark" aria-hidden="true">好</span>
+      <span class="brand-copy"><strong>好孕來宜蘭</strong><small>給每個新家庭的祝福</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="siteNav">
+      <span aria-hidden="true">☰</span><span class="sr-only">開啟導覽選單</span>
+    </button>
+    <nav id="siteNav" class="site-nav" aria-label="主要導覽">
+      <a href="#benefits">找補助</a>
+      <a href="#guide">申請指南</a>
+      <a href="#faq">常見問題</a>
+      <button id="savedBtn" class="saved-nav" type="button" aria-pressed="false">♡ 我的收藏 <b id="savedCount">0</b></button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="hero-content">
+        <div class="eyebrow"><span class="eyebrow-line"></span> 宜蘭爸媽的育兒福利入口</div>
+        <h1>新手爸媽<br><em>大禮包</em></h1>
+        <p>把祝福，變成實實在在的支持。<br>從期待寶寶到陪伴長大，幫你找到每一份照顧。</p>
+        <a class="primary-button" href="#benefits">打開我的補助大禮包 <span aria-hidden="true">↗</span></a>
+        <div class="hero-note"><span class="note-dot"></span> 中央福利 × 宜蘭地方補助，一次整理</div>
+      </div>
+      <div class="hero-stamp" aria-hidden="true"><span>FOR</span><strong>NEW<br>FAMILY</strong><i>✳</i></div>
+    </section>
+
+    <div class="ribbon" aria-label="服務理念">
+      <span>孕期的安心</span><i aria-hidden="true">✧</i><span>出生的祝福</span><i aria-hidden="true">✧</i><span>成長的陪伴</span>
+      <small>資料核對：2026.10.16</small>
+    </div>
+
+    <section id="benefits" class="section benefits-section">
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow"><span class="eyebrow-line"></span> 每個階段，都有支持</div>
+          <h2>看看你家的<br class="mobile-break">大禮包</h2>
+        </div>
+        <p>先選寶寶的階段，再看適合的補助。<br>展開福利卡片，即可查看資格與官方資訊。</p>
+      </div>
+
+      <div class="stage-tabs" role="group" aria-label="依成長階段篩選">
+        <button class="stage-tab active" type="button" data-stage="all" aria-pressed="true">全部福利</button>
+        <button class="stage-tab" type="button" data-stage="preg" aria-pressed="false">備孕・懷孕中</button>
+        <button class="stage-tab" type="button" data-stage="birth" aria-pressed="false">寶寶剛出生</button>
+        <button class="stage-tab" type="button" data-stage="baby" aria-pressed="false">0–未滿 2 歲</button>
+        <button class="stage-tab" type="button" data-stage="kid" aria-pressed="false">2 歲以上幼兒</button>
+      </div>
+
+      <div class="filters">
+        <label class="field">
+          <span>戶籍地</span>
+          <select id="region">
+            <option value="city">宜蘭市</option>
+            <option value="county">宜蘭縣其他鄉鎮</option>
+            <option value="national">其他縣市（中央福利）</option>
+          </select>
+        </label>
+        <label class="field search-field">
+          <span>搜尋補助</span>
+          <input id="query" type="search" placeholder="例如：托育、產檢、育嬰留停" autocomplete="off">
+        </label>
+      </div>
+      <div class="result-line">
+        <p id="resultCount" aria-live="polite">載入福利清單中…</p>
+        <button id="reset" class="text-button" type="button">重設篩選</button>
+      </div>
+      <div id="cards" class="cards" aria-live="polite"></div>
+      <p class="notice"><strong>閱讀提醒：</strong>本頁為福利資訊整理，非政府申辦網站。金額為新臺幣；設籍年限、出生日期、保險與照顧方式都可能影響資格，請以承辦機關核定為準。其他鄉鎮加碼請查閱 <a href="https://sntroot.e-land.gov.tw/News_Content.aspx?n=11276&amp;s=133324" target="_blank" rel="noopener noreferrer">縣府各鄉鎮市一覽表 ↗</a>。</p>
+    </section>
+
+    <section class="estimate-section">
+      <div class="estimate-copy">
+        <div class="eyebrow eyebrow-light"><span class="eyebrow-line"></span> 先有概念，再安心規劃</div>
+        <h2>每月照顧補助，<br>大約可以領多少？</h2>
+        <p>這是基本額度的概略試算，並非資格判定。育兒津貼與托育補助擇一，不可重複計算。</p>
+        <div class="estimate-footnote"><span aria-hidden="true">✳</span> 實際金額請以承辦機關核定為準。</div>
+      </div>
+      <div class="calculator">
+        <label class="calc-field" for="order">寶寶是第幾名子女？
+          <select id="order">
+            <option value="0">第 1 名子女</option>
+            <option value="1">第 2 名子女</option>
+            <option value="2">第 3 名以上子女</option>
+          </select>
+        </label>
+        <label class="calc-field" for="care">目前的照顧方式
+          <select id="care">
+            <option value="5000" data-care="home">自己帶／未使用公共或準公共托育</option>
+            <option value="7000" data-care="public">公共化托育</option>
+            <option value="13000" data-care="quasi">準公共托嬰中心／保母</option>
+          </select>
+        </label>
+        <div class="total" aria-live="polite" aria-atomic="true">
+          <span>每月基本補助參考</span>
+          <strong id="amount">5,000 <small>元／月</small></strong>
+        </div>
+        <p class="calc-note" id="calcNote">未滿 2 歲基本額度示意；仍須符合各項請領條件。</p>
+      </div>
+    </section>
+
+    <section id="guide" class="section guide-section">
+      <div class="section-heading guide-heading">
+        <div><div class="eyebrow"><span class="eyebrow-line"></span> 少一點手忙腳亂</div><h2>申請補助，從這裡開始</h2></div>
+        <p>把流程拆成四步，逐項確認就不容易漏掉。</p>
+      </div>
+      <div class="steps">
+        <article class="step-card"><span class="step-number">01</span><h3>確認家庭條件</h3><p>先看孩子年齡、戶籍地、父母設籍年限，以及保險與送托方式。</p></article>
+        <article class="step-card"><span class="step-number">02</span><h3>準備常用文件</h3><p>身分證明、戶籍資料、存摺封面等。實際文件以各項官方清單為準。</p></article>
+        <article class="step-card"><span class="step-number">03</span><h3>留意申請期限</h3><p>部分生育補助有出生後申請期限，請盡早確認戶籍地規定與起算日期。</p></article>
+        <article class="step-card"><span class="step-number">04</span><h3>到官方窗口申辦</h3><p>從福利卡片前往官方資訊，依規定線上申請，或洽戶政、公所與承辦單位。</p></article>
+      </div>
+    </section>
+
+    <section id="faq" class="section faq-section">
+      <div class="faq-intro"><div class="eyebrow"><span class="eyebrow-line"></span> 爸媽常問</div><h2>幫你釐清<br>小疑問</h2><p>不確定自己適用哪一項？先從這裡看起。</p></div>
+      <div class="faq-list">
+        <details><summary>育兒津貼和托育補助，可以一起領嗎？</summary><p>同一幼兒同一期間原則上不能重複領取。自行照顧可查看育兒津貼；使用公共或準公共托育，則依規定申請托育補助。銜接規定請向承辦單位確認。</p></details>
+        <details><summary>中央生育補助的 10 萬元方案，是同一種嗎？</summary><p>不是。符合勞保生育給付等條件者，適用「勞保生育給付加計勞工生育補助，合計至 10 萬元」方案；未參加勞保、農保、公教保、軍保及國民年金等相關社會保險的符合資格生母，則查詢另一項 10 萬元生育補助。兩案資格不同，不能視為可重複領取，請依官方申辦頁確認。</p></details>
+        <details><summary>宜蘭縣和宜蘭市的補助一樣嗎？</summary><p>不一定。縣級補助與宜蘭市的地方加碼可能有不同資格。住在其他鄉鎮，請查詢自己戶籍地公所的加碼方案。</p></details>
+        <details><summary>收藏後，會幫我申請補助嗎？</summary><p>收藏只會將清單保存在目前瀏覽器，方便下次查看；不會代送申請、不會連接政府帳戶，也不代表審核通過。更換裝置通常不會同步。</p></details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="footer-brand" href="#">好孕來宜蘭<span>給每個新家庭的祝福</span></a>
+    <p>讓每個孩子，在祝福與支持中長大。</p>
+    <small>新手爸媽大禮包｜宜蘭家庭福利資訊整理<br>政策資料核對於 2026 年 10 月 16 日；最新資格與金額請參考各項官方公告。</small>
+  </footer>
+</body>
+</html>
